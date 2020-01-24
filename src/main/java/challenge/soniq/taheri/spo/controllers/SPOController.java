@@ -14,7 +14,7 @@ import javax.validation.Valid;
 @RequestMapping({"/api/spo"})
 public class SPOController {
 
-    private OptimiseStaffs optimiseStaffs = null;
+    private OptimiseStaffs optimiseStaffs;
 
     public SPOController(OptimiseStaffs optimiseStaffs) {
         this.optimiseStaffs = optimiseStaffs;
