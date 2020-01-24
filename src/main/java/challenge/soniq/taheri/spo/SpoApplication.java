@@ -1,12 +1,14 @@
 package challenge.soniq.taheri.spo;
 
 import challenge.soniq.taheri.spo.services.OptimiseStaffs;
-import challenge.soniq.taheri.spo.services.OptimiseStaffsFactory;
 import challenge.soniq.taheri.spo.services.impl.OptimiseStaffsFactoryImpl;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
+
+@EnableSwagger2
 @SpringBootApplication
 public class SpoApplication {
 

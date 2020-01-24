@@ -12,16 +12,19 @@ Move to the root directory of the application and run this command:
 
 And finally, let's run our image:
 
-`$ docker run -p 8090:8080 greeting-app` 
+`$ docker run -p 8090:8080 spo-app` 
 
 
 ## Main url for spo api (POST)
 http://locahost:8080/api/spo
 
+You can also the Swagger UI endpoint from:
+http://localhost:8080/swagger-ui.html
+
 
 ####Example
 
-* Request br/>
+* Request
 	```json 
 	{ 
 		"rooms": [24, 28],
@@ -52,3 +55,9 @@ http://locahost:8080/api/spo
      ```
  
 
+# Algorithm
+The optimisation is implemented in the `GreedyOptimiseStaffsImpl` class.
+At first, we calculate how many senior staff need. Then, we recursively call the `optimiseStructureCapacity` method by
+ decrease seniorsCount and increase juniorCount,
+  until it finds best solution. 
+  We want to minimize difference between staffs' capacity and size of the building.

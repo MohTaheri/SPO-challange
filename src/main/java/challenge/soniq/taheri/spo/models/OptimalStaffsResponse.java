@@ -7,22 +7,22 @@ package challenge.soniq.taheri.spo.models;
 
 public class OptimalStaffsResponse {
 
-    private int senior;
-    private int junior;
+    private Integer senior;
+    private Integer junior;
 
     public OptimalStaffsResponse() {
     }
 
-    public OptimalStaffsResponse(int seniorStaff, int juniorStaff) {
+    public OptimalStaffsResponse(Integer seniorStaff, Integer juniorStaff) {
         this.junior = juniorStaff;
         this.senior = seniorStaff;
     }
 
-    public int getSenior() {
+    public Integer getSenior() {
         return senior;
     }
 
-    public int getJunior() {
+    public Integer getJunior() {
         return junior;
     }
 

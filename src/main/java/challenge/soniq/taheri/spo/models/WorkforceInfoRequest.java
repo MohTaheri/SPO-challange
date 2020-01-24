@@ -6,22 +6,19 @@ import javax.validation.constraints.Min;
 
 public class WorkforceInfoRequest {
 
-
-
     @Workforce
     private Integer[] rooms = new Integer[0];
 
     @Min(value = 1, message = "Senior capability must be greater than or equal to 1")
-    private int senior = 0;
+    private Integer senior = 0;
 
     @Min(value = 1, message = "Junior capability must be greater than or equal to 1")
-    private int junior = 0;
-
+    private Integer junior = 0;
 
     public WorkforceInfoRequest() {
     }
 
-    public WorkforceInfoRequest(Integer[] rooms, int senior, int junior) {
+    public WorkforceInfoRequest(Integer[] rooms, Integer senior, Integer junior) {
         this.rooms = rooms;
         this.senior = senior;
         this.junior = junior;
@@ -35,19 +32,19 @@ public class WorkforceInfoRequest {
         this.rooms = rooms;
     }
 
-    public int getSenior() {
+    public Integer getSenior() {
         return senior;
     }
 
-    public void setSenior(int senior) {
+    public void setSenior(Integer senior) {
         this.senior = senior;
     }
 
-    public int getJunior() {
+    public Integer getJunior() {
         return junior;
     }
 
-    public void setJunior(int junior) {
+    public void setJunior(Integer junior) {
         this.junior = junior;
     }
 }

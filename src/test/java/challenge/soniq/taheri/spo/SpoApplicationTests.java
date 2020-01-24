@@ -1,14 +1,12 @@
 package challenge.soniq.taheri.spo;
 
 import challenge.soniq.taheri.spo.models.OptimalStaffsResponse;
-import challenge.soniq.taheri.spo.models.WorkforceInfoRequest;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.assertj.core.api.Assertions;
 import org.json.JSONException;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.skyscreamer.jsonassert.JSONAssert;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;

@@ -13,8 +13,12 @@ import javax.validation.Valid;
 @RestController
 @RequestMapping({"/api/spo"})
 public class SPOController {
-    @Autowired
-    private OptimiseStaffs optimiseStaffs;
+
+    private OptimiseStaffs optimiseStaffs = null;
+
+    public SPOController(OptimiseStaffs optimiseStaffs) {
+        this.optimiseStaffs = optimiseStaffs;
+    }
 
     @PostMapping
     public ResponseEntity<OptimalStaffsResponse[]> getWorkforceInfo
