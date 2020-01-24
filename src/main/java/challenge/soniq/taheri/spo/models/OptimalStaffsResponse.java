@@ -7,10 +7,13 @@ package challenge.soniq.taheri.spo.models;
 
 public class OptimalStaffsResponse {
 
-    private final int senior;
-    private final int junior;
+    private int senior;
+    private int junior;
 
-    public OptimalStaffsResponse(int seniorStaff, int juniorStaff){
+    public OptimalStaffsResponse() {
+    }
+
+    public OptimalStaffsResponse(int seniorStaff, int juniorStaff) {
         this.junior = juniorStaff;
         this.senior = seniorStaff;
     }
@@ -21,5 +24,32 @@ public class OptimalStaffsResponse {
 
     public int getJunior() {
         return junior;
+    }
+
+
+    @Override
+    public int hashCode() {
+        return this.senior + this.junior;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final OptimalStaffsResponse other = (OptimalStaffsResponse) obj;
+        if (this.senior != other.senior) {
+            return false;
+        }
+        if (this.junior != other.junior) {
+            return false;
+        }
+        return true;
     }
 }

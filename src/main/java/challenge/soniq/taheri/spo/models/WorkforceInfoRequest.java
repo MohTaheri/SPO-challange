@@ -6,6 +6,8 @@ import javax.validation.constraints.Min;
 
 public class WorkforceInfoRequest {
 
+
+
     @Workforce
     private Integer[] rooms = new Integer[0];
 
@@ -14,6 +16,10 @@ public class WorkforceInfoRequest {
 
     @Min(value = 1, message = "Junior capability must be greater than or equal to 1")
     private int junior = 0;
+
+
+    public WorkforceInfoRequest() {
+    }
 
     public WorkforceInfoRequest(Integer[] rooms, int senior, int junior) {
         this.rooms = rooms;
