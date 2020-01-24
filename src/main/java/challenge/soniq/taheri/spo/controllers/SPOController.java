@@ -1,6 +1,6 @@
 package challenge.soniq.taheri.spo.controllers;
 
-import challenge.soniq.taheri.spo.controllers.model.WorkforceInfoRequest;
+import challenge.soniq.taheri.spo.models.WorkforceInfoRequest;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

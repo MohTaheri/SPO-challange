@@ -1,6 +1,6 @@
 package challenge.soniq.taheri.spo;
 
-import challenge.soniq.taheri.spo.controllers.model.WorkforceInfoRequest;
+import challenge.soniq.taheri.spo.models.WorkforceInfoRequest;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.json.JSONException;
 import org.junit.Test;
@@ -11,10 +11,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.http.*;
 import org.springframework.test.context.junit4.SpringRunner;
-import org.springframework.validation.Validator;
-
-import javax.validation.ConstraintViolation;
-import java.util.Set;
 
 import static org.junit.Assert.assertEquals;
 

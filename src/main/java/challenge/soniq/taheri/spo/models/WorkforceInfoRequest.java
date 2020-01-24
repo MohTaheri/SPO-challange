@@ -1,4 +1,4 @@
-package challenge.soniq.taheri.spo.controllers.model;
+package challenge.soniq.taheri.spo.models;
 
 import challenge.soniq.taheri.spo.controllers.validator.Workforce;
 
